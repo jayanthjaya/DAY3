@@ -4,20 +4,19 @@ public class Amoebamuitiplication {
 
 	public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
-	int n;
-	 n =sc.nextInt();
+	
+	int n1=0, n2=1 , n3 = 0 ,i , number ;
+	
+	System.out.println("Enter The Number");
+	 number =sc.nextInt();
 		
-	
-	
-		{
-			if (n==1)
-			{
-		System.out.println("Yes");
-			}
-			else {
-				System.out.println("No");
-			}
-		}
+	 for (i = 2 ; i<number ; ++i ) {
+		 n3 = n1+n2 ;
+		 n1 = n2;
+		 n2 = n3 ;		 
+	 }
+		
+	 System.out.println( n3 );
 		
 
 	}
